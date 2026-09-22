@@ -11,3 +11,13 @@ Desktop.ini
 # Editor directories
 .vscode/
 .idea/
+
+# Design and workspace folders
+Anastasia website design 2/
+Anastasia website design 3/
+design 4/
+Git repo/
+restore_hosts.bat
+restore_hosts.ps1
+
+

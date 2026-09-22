@@ -1,0 +1,16 @@
+# Opt out of training/data collection by these compliant crawlers.
+# These directives are not access controls. Search crawlers remain allowed.
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: *
+Allow: /

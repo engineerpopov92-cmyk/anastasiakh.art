@@ -1,390 +1,101 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="light">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>Anastasia Kh. | Digital &amp; Watercolor Artist</title>
-  <meta name="description" content="Watercolor-inspired digital illustrations, shop, free brush packs, tutorials, and portfolio by Anastasia Kh. (@anastasia.kh.artist)." />
-  <meta name="author" content="Anastasia Kh." />
-  
-  <!-- Open Graph / Social Meta -->
-  <meta property="og:type" content="profile" />
-  <meta property="og:title" content="Anastasia Kh. | Artist &amp; Illustrator" />
-  <meta property="og:description" content="Watercolor-inspired digital illustrations 🖊️✨ Shop prints, free downloads, tutorials &amp; portfolio." />
-  <meta property="og:image" content="Photo3.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Anastasia Kh. | Artist &amp; Illustrator" />
-  <meta name="twitter:description" content="Watercolor-inspired digital illustrations 🖊️✨ Shop prints, free downloads, tutorials &amp; portfolio." />
-  <meta name="twitter:image" content="Photo3.jpg" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Art for the everyday. Discover printable art, fine art prints and bespoke illustrations by Anastasia&nbsp;Kh.">
+  <meta name="theme-color" content="#f5f2e9">
+  <title>an·kh — Art for the everyday</title>
+  <link rel="icon" href="assets/logo_dark.png">
+  <link rel="preload" href="assets/cormorant-500.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="typography.css?v=20260921-rhythm">
+  <link rel="stylesheet" href="palette.css?v=20260922-viewport">
+  <script src="app.js?v=20260922-safe-autoplay" defer></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4X02KP9LKQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/jpeg" href="avatar.jpg" />
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="style.css" />
+    gtag('config', 'G-4X02KP9LKQ');
+  </script>
 </head>
 <body>
-  <!-- Ambient background glow / paper texture aesthetic -->
-  <div class="background-decor" aria-hidden="true">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-  </div>
-
-  <!-- Top Navigation / Utility Bar -->
-  <header class="top-nav">
-    <div class="nav-container">
-      <a href="#" class="nav-brand">Anastasia Kh.</a>
-      <div class="nav-controls">
-        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Switch Theme">
-          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-        </button>
-        <a href="#contact" class="nav-cta-btn">Get in Touch</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header">
+    <a class="brand" href="#gallery" aria-label="an·kh home"><img src="assets/logo_dark.png" width="140" height="52" alt="an·kh"><span>ART &<br>ILLUSTRATION</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">☰</span></button>
+    <nav id="navigation" aria-label="Main navigation">
+      <div class="shop-dropdown">
+        <button class="shop-toggle" aria-expanded="false" aria-controls="shop-dropdown-links">SHOP <span aria-hidden="true">▾</span></button>
+        <div class="shop-dropdown-links" id="shop-dropdown-links" hidden>
+          <a href="https://anastasiakhartist.gumroad.com/" target="_blank" rel="noopener noreferrer">PRINTABLE ART <span aria-hidden="true">↗</span><small>Gumroad</small></a>
+          <a href="https://www.artmajeur.com/anastasia-kh" target="_blank" rel="noopener noreferrer">FINE ART PRINTS <span aria-hidden="true">↗</span><small>ArtMajeur</small></a>
+        </div>
       </div>
-    </div>
+      <a href="#about">ABOUT</a><a href="#commissions">COMMISSIONS</a><a href="#contact">CONTACTS</a>
+    </nav>
   </header>
-
-  <main class="page-wrapper">
-    <!-- Hero / Profile Section -->
-    <section class="hero-section">
-      <div class="profile-card">
-        <div class="avatar-wrapper">
-          <div class="avatar-ring"></div>
-          <img src="avatar.jpg" alt="Anastasia Kh. - Artist Portrait" class="avatar-img" width="130" height="130" draggable="false" oncontextmenu="return false;" />
-          <span class="status-badge" title="Open to commercial licensing & inquiries">
-            <span class="status-dot"></span> Available
-          </span>
-        </div>
-
-        <div class="profile-info">
-          <h1 class="artist-name">Anastasia Kh.</h1>
-          <p class="artist-handle">@anastasia.kh.artist</p>
-          <p class="artist-tagline">Watercolor-Inspired Digital Illustrations &bull; Content Creator</p>
-          
-          <p class="artist-bio">
-            Exploring the delicate balance of fluid watercolor textures and digital precision. 
-            Warm atmospheres, botanical studies, and everyday delights.
-          </p>
-
-          <!-- Social Quick Links Bar -->
-          <div class="social-pills-bar">
-            <a href="https://www.instagram.com/an.kh.arts" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-              <span>Instagram</span>
-            </a>
-            <a href="https://www.youtube.com/@anastasiakhart" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="YouTube">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-              <span>YouTube</span>
-            </a>
-            <a href="https://cara.app/anastasiakh" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Cara">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14.93c-2.48.33-4.59-1.39-4.88-3.77-.3-2.46 1.45-4.66 3.91-4.94 1.76-.2 3.37.69 4.14 2.18l-1.84.97c-.44-.82-1.35-1.28-2.3-1.17-1.38.16-2.36 1.4-2.19 2.78.17 1.34 1.35 2.31 2.73 2.15 1.05-.12 1.86-.87 2.05-1.89H12.5v-2.04h4.52c.04.28.06.58.06.88 0 2.82-1.74 4.54-4.08 4.85z"/></svg>
-              <span>Cara</span>
-            </a>
-            <a href="https://www.pinterest.com/anastasiakhartist/" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Pinterest">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.546.535 6.627 0 12-5.373 12-12C24 5.373 18.627 0 12 0z"/></svg>
-              <span>Pinterest</span>
-            </a>
-          </div>
-        </div>
+  <main id="main">
+    <section class="gallery" id="gallery" aria-label="Art collections" aria-roledescription="carousel">
+      <article class="slide active" id="collection-0" role="tabpanel" aria-roledescription="slide" aria-label="1 of 3: Printable art">
+        <img class="scene" src="assets/slide1_printable_art.webp" alt="A sunlit gallery wall of colorful food illustrations in wooden frames" fetchpriority="high">
+        <div class="shade"></div>
+        <div class="hero-copy"><p class="eyebrow">Art for the everyday</p><h1>PRINTABLE ART</h1><p>High-resolution digital art to download and print&nbsp;— from individual pieces and cards to curated sets and gallery walls.</p><a class="button burgundy" href="https://anastasiakhartist.gumroad.com/" target="_blank" rel="noopener">Explore printable art <span aria-hidden="true">↗</span></a><span class="micro">DIGITAL DOWNLOAD · PRINT AT HOME OR WITH A PRINT SHOP</span><div class="carousel-controls" role="group" aria-label="Browse collections"><div class="slide-progress" aria-hidden="true"><span><i></i></span><span><i></i></span><span><i></i></span></div><div class="arrows"><button aria-label="Previous collection" data-direction="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="14 5 7 12 14 19"/></svg></button><button aria-label="Next collection" data-direction="1"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="10 5 17 12 10 19"/></svg></button></div></div></div>
+      </article>
+      <article class="slide slide-dark" id="collection-1" role="tabpanel" aria-roledescription="slide" aria-label="2 of 3: Fine art prints" hidden>
+        <img class="scene" src="assets/slide2_fine_art_prints.webp" alt="Two framed food illustrations resting on a rich red velvet sofa">
+        <div class="shade"></div>
+        <div class="hero-copy"><p class="eyebrow">Made to be lived with</p><h2>FINE ART PRINTS</h2><p>Fine art prints on archival Hahnemühle paper, made with high-quality pigment inks. Printed to order and shipped worldwide through ArtMajeur.</p><a class="button cream" href="https://www.artmajeur.com/anastasia-kh" target="_blank" rel="noopener">Explore fine art prints <span aria-hidden="true">↗</span></a><span class="micro">PRINTED TO ORDER · SHIPPED WORLDWIDE</span><div class="carousel-controls" role="group" aria-label="Browse collections"><div class="slide-progress" aria-hidden="true"><span><i></i></span><span><i></i></span><span><i></i></span></div><div class="arrows"><button aria-label="Previous collection" data-direction="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="14 5 7 12 14 19"/></svg></button><button aria-label="Next collection" data-direction="1"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="10 5 17 12 10 19"/></svg></button></div></div></div>
+      </article>
+      <article class="slide originals" id="collection-2" role="tabpanel" aria-roledescription="slide" aria-label="3 of 3: Original paintings" hidden>
+        <img class="scene" src="assets/slide3_original_paintings.webp" alt="Anastasia sketching in her armchair">
+        <div class="shade"></div>
+        <div class="hero-copy"><p class="eyebrow">A new chapter, in the making</p><h2>ORIGINAL PAINTINGS</h2><p>I’m beginning a new collection of <span class="keep-together">one-of-a-kind</span> paintings in traditional media, developed from sketches, everyday observations and familiar subjects.</p><a class="button burgundy" href="https://www.instagram.com/an.kh.art" target="_blank" rel="noopener noreferrer">FOLLOW ALONG <span aria-hidden="true">↗</span></a><span class="micro">FIRST ORIGINALS COMING SOON</span><div class="carousel-controls" role="group" aria-label="Browse collections"><div class="slide-progress" aria-hidden="true"><span><i></i></span><span><i></i></span><span><i></i></span></div><div class="arrows"><button aria-label="Previous collection" data-direction="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="14 5 7 12 14 19"/></svg></button><button aria-label="Next collection" data-direction="1"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="10 5 17 12 10 19"/></svg></button></div></div></div>
+      </article>
+      <div class="gallery-bottom"><div class="collection-tabs" role="tablist" aria-label="Choose a collection"><button role="tab" id="tab-0" aria-controls="collection-0" aria-selected="true" data-slide="0"><span>01</span> Printable art</button><button role="tab" id="tab-1" aria-controls="collection-1" aria-selected="false" tabindex="-1" data-slide="1"><span>02</span> Fine art prints</button><button role="tab" id="tab-2" aria-controls="collection-2" aria-selected="false" tabindex="-1" data-slide="2"><span>03</span> Original paintings</button></div></div>
+      <span class="sr-only" id="slide-status" aria-live="polite"></span>
+    </section>
+    <div class="intro-line"><a href="#about">A glimpse into my world <span aria-hidden="true">↓</span></a></div>
+    <section class="about editorial" id="about">
+      <figure class="portrait"><div class="portrait-mat"><img src="assets/artist_portrait.webp" width="900" height="1067" alt="Anastasia sitting in a patterned armchair beside a sunlit window" loading="lazy"></div><figcaption>THE PERSON BEHIND THE PIECES</figcaption></figure>
+      <div class="about-copy">
+        <p class="eyebrow">Meet the artist</p>
+        <h2>Hi, I’m <em>Anastasia.</em></h2>
+        <p>I’m an artist with a background in design and more than a decade spent working in the visual world of&nbsp;3D.</p>
+        <p>These days, I’m drawn to much simpler things: food on the table, hands around a cup, familiar objects, and small scenes from everyday life. I paint them digitally and with traditional materials, giving ordinary things a little more attention than they usually get.</p>
+        <p>Art has been part of my life since childhood, and now I’m building a practice of my own&nbsp;— one piece at a time.</p>
       </div>
     </section>
-
-    <!-- Links / Action Hub (The Modern Linktree Alternative) -->
-    <section class="links-section" id="links">
-      <div class="section-header">
-        <span class="section-eyebrow">Quick Access</span>
-        <h2 class="section-title">Explore &amp; Connect</h2>
-        <p class="section-subtitle">Resources, shop, full galleries, and behind-the-scenes content.</p>
-      </div>
-
-      <div class="links-grid">
-        <!-- 1. Free Downloads (Featured Callout) -->
-        <a href="https://gum.co/u/evhvz7ht" target="_blank" rel="noopener noreferrer" class="link-card featured-link">
-          <div class="link-badge">Free Gift</div>
-          <div class="link-icon-wrap glow-gold">
-            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-          </div>
-          <div class="link-content">
-            <div class="link-title-row">
-              <span class="link-title">Free Downloads &amp; Resources</span>
-              <span class="link-tag">Gumroad</span>
-            </div>
-            <p class="link-desc">Grab free color palettes, brush samples, and digital drawing guides.</p>
-          </div>
-          <div class="link-arrow">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-          </div>
-        </a>
-
-        <!-- 2. Gumroad Shop -->
-        <a href="https://anastasiakhartist.gumroad.com/?utm_campaign=linktree-traffic&utm_medium=bio&utm_source=linktree&utm_term=-" target="_blank" rel="noopener noreferrer" class="link-card">
-          <div class="link-icon-wrap warm-terracotta">
-            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-          </div>
-          <div class="link-content">
-            <div class="link-title-row">
-              <span class="link-title">Art Shop &amp; Brush Packs</span>
-              <span class="link-tag">Store</span>
-            </div>
-            <p class="link-desc">Procreate brush packs, textures, art prints, and high-res wallpapers.</p>
-          </div>
-          <div class="link-arrow">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-          </div>
-        </a>
-
-        <!-- 3. Cara Portfolio -->
-        <a href="https://cara.app/anastasiakh" target="_blank" rel="noopener noreferrer" class="link-card">
-          <div class="link-icon-wrap calm-slate">
-            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
-          </div>
-          <div class="link-content">
-            <div class="link-title-row">
-              <span class="link-title">Portfolio on Cara</span>
-              <span class="link-tag">Portfolio</span>
-            </div>
-            <p class="link-desc">High-resolution showcase of digital illustrations on Cara App.</p>
-          </div>
-          <div class="link-arrow">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-          </div>
-        </a>
-
-        <!-- 4. YouTube Channel -->
-        <a href="https://www.youtube.com/@anastasiakhart" target="_blank" rel="noopener noreferrer" class="link-card">
-          <div class="link-icon-wrap bright-red">
-            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-          </div>
-          <div class="link-content">
-            <div class="link-title-row">
-              <span class="link-title">YouTube Speedpaints &amp; Tutorials</span>
-              <span class="link-tag">Videos</span>
-            </div>
-            <p class="link-desc">Watch real-time drawing process, digital watercolor tips, and studio vlogs.</p>
-          </div>
-          <div class="link-arrow">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-          </div>
-        </a>
-
-        <!-- 5. Instagram Profile -->
-        <a href="https://www.instagram.com/an.kh.arts" target="_blank" rel="noopener noreferrer" class="link-card">
-          <div class="link-icon-wrap vivid-pink">
-            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-          </div>
-          <div class="link-content">
-            <div class="link-title-row">
-              <span class="link-title">Instagram @an.kh.arts</span>
-              <span class="link-tag">Daily Art</span>
-            </div>
-            <p class="link-desc">Daily works in progress, sketches, stories, and community Q&amp;As.</p>
-          </div>
-          <div class="link-arrow">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-          </div>
-        </a>
-
-        <!-- 6. Pinterest -->
-        <a href="https://www.pinterest.com/anastasiakhartist/" target="_blank" rel="noopener noreferrer" class="link-card">
-          <div class="link-icon-wrap warm-coral">
-            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.546.535 6.627 0 12-5.373 12-12C24 5.373 18.627 0 12 0z"/></svg>
-          </div>
-          <div class="link-content">
-            <div class="link-title-row">
-              <span class="link-title">Pinterest Boards</span>
-              <span class="link-tag">Inspiration</span>
-            </div>
-            <p class="link-desc">Curated color palettes, aesthetics, moodboards, and artistic references.</p>
-          </div>
-          <div class="link-arrow">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-          </div>
-        </a>
-      </div>
+    <section class="commissions editorial" id="commissions">
+      <div class="commission-copy"><p class="eyebrow">Bespoke artwork</p><h2>Commission<br><em>a piece.</em></h2><p>A favourite meal, a place worth remembering, an object with a story&nbsp;— or a broader visual idea for a space, collection or project.</p><p>I take on selected private and commercial commissions, from individual artworks to larger visual projects. Each piece is developed in my own visual language and shaped around its subject, setting and purpose.</p><div class="commission-list"><details><summary>What to include in your enquiry <span>+</span></summary><p>Tell me a little about your idea, what the artwork is for, and any preferred size, format or timing. References and an approximate budget are welcome if you have them. You don’t need a finished brief to start the conversation.</p></details></div><a class="button burgundy" href="mailto:hello@anastasiakh.art?subject=Commission%20enquiry&body=Hi%20Anastasia%2C%0A%0AMy%20project%3A%0ASubject%20and%20inspiration%3A%0AFormat%3A%0AIdeal%20timeline%3A">Tell me about your project <span aria-hidden="true">↗</span></a></div>
+      <figure class="commission-image"><img src="assets/commission_ipad.webp" width="1600" height="1200" alt="Hands illustrating peaches on an iPad with a digital pencil" loading="lazy"><figcaption>FROM A SMALL IDEA TO SOMETHING PERSONAL.</figcaption></figure>
     </section>
-
-    <!-- Art Gallery Section -->
-    <section class="gallery-section" id="gallery">
-      <div class="section-header">
-        <span class="section-eyebrow">Selected Works</span>
-        <h2 class="section-title">Art Gallery</h2>
-        <p class="section-subtitle">Click on any piece to view in full resolution.</p>
-      </div>
-
-      <div class="gallery-grid">
-        <!-- Artwork 1 -->
-        <div class="gallery-item" data-index="0" data-src="Art1.jpg" data-title="Borscht Case Scenario" data-desc="Culinary watercolor illustration capturing rich beetroot tones, sour cream swirls, and rustic herbs on wood.">
-          <div class="gallery-thumb-wrap">
-            <img src="Art1.jpg" alt="Borscht Case Scenario - Watercolor Illustration" class="gallery-img" loading="lazy" draggable="false" oncontextmenu="return false;" />
-            <div class="gallery-overlay">
-              <span class="view-btn">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                View Piece
-              </span>
-            </div>
-          </div>
-          <div class="artwork-caption">
-            <h3 class="artwork-title">Borscht Case Scenario</h3>
-            <span class="artwork-medium">Digital Watercolor • Illustration</span>
-          </div>
-        </div>
-
-        <!-- Artwork 2 -->
-        <div class="gallery-item" data-index="1" data-src="ARt2.jpg" data-title="Crab Claw &amp; Blue Rose" data-desc="A poetic juxtaposition of marine textures and delicate botanical bloom with fluid pigment splatters.">
-          <div class="gallery-thumb-wrap">
-            <img src="ARt2.jpg" alt="Crab Claw & Blue Rose - Watercolor Illustration" class="gallery-img" loading="lazy" draggable="false" oncontextmenu="return false;" />
-            <div class="gallery-overlay">
-              <span class="view-btn">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                View Piece
-              </span>
-            </div>
-          </div>
-          <div class="artwork-caption">
-            <h3 class="artwork-title">Crab Claw &amp; Blue Rose</h3>
-            <span class="artwork-medium">Fine Pigment Study • Original Art</span>
-          </div>
-        </div>
-
-        <!-- Artwork 3 -->
-        <div class="gallery-item" data-index="2" data-src="Art3.jpg" data-title="Monstera in Pink" data-desc="Dramatic interplay of sunlit botanical Monstera fronds, graphic cast shadows, and warm dusty rose tones.">
-          <div class="gallery-thumb-wrap">
-            <img src="Art3.jpg" alt="Monstera in Pink - Watercolor Illustration" class="gallery-img" loading="lazy" draggable="false" oncontextmenu="return false;" />
-            <div class="gallery-overlay">
-              <span class="view-btn">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                View Piece
-              </span>
-            </div>
-          </div>
-          <div class="artwork-caption">
-            <h3 class="artwork-title">Monstera in Pink</h3>
-            <span class="artwork-medium">Botanical Study • Light &amp; Shadow</span>
-          </div>
-        </div>
-
-        <!-- Artwork 4 -->
-        <div class="gallery-item" data-index="3" data-src="Art4.jpg" data-title="Stacked Teacups" data-desc="Earthy ceramic study blending rich terracotta and glazed cerulean teacups atop archival textured paper.">
-          <div class="gallery-thumb-wrap">
-            <img src="Art4.jpg" alt="Stacked Teacups - Watercolor Illustration" class="gallery-img" loading="lazy" draggable="false" oncontextmenu="return false;" />
-            <div class="gallery-overlay">
-              <span class="view-btn">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                View Piece
-              </span>
-            </div>
-          </div>
-          <div class="artwork-caption">
-            <h3 class="artwork-title">Stacked Teacups</h3>
-            <span class="artwork-medium">Ceramic Still Life • Paper Texture</span>
-          </div>
-        </div>
-      </div>
+    <section class="wallpapers" id="wallpapers" aria-labelledby="wallpaper-title">
+      <div class="wallpaper-art"><img src="assets/wallpapers_phones.webp" width="1200" height="1200" alt="Pomegranate, strawberry and papaya artwork displayed as phone wallpapers" loading="lazy"></div>
+      <div class="wallpaper-copy"><p class="eyebrow">FREE PHONE WALLPAPERS</p><h2 id="wallpaper-title">A little art<br><em>for your screen.</em></h2><p>Food and fruit illustrations from my collection, ready to make your phone feel a little more yours.</p><a class="button cream" href="https://anastasiakhartist.gumroad.com/l/FoodFruitPhoneWallpapers" target="_blank" rel="noopener">GET THE WALLPAPERS <span aria-hidden="true">↗</span></a><span class="micro">A COMPLIMENTARY COLLECTION · VIA GUMROAD</span><span class="micro wallpaper-updates">You may also receive occasional notes from me about new artwork and life in the studio.</span></div>
     </section>
-
-    <!-- Meet the Artist / Studio Glimpse -->
-    <section class="studio-section">
-      <div class="studio-card">
-        <div class="studio-content">
-          <span class="section-eyebrow">Behind the Easel</span>
-          <h2 class="studio-title">Digital Medium with a Traditional Soul</h2>
-          <p class="studio-text">
-            Every piece begins with organic inspiration—food culture, botanical foliage, and cozy everyday still lifes. 
-            Blending the tactile fluidity of watercolor pigments with the versatility of digital tools (iPad, Procreate, and custom-crafted brushes), 
-            I create art designed to bring warmth and playfulness to spaces and stories.
-          </p>
-          <div class="studio-tags">
-            <span class="studio-tag">Procreate &amp; iPad</span>
-            <span class="studio-tag">Watercolor Textures</span>
-            <span class="studio-tag">Brush Pack Creator</span>
-            <span class="studio-tag">Botanical &amp; Food Art</span>
-          </div>
-        </div>
-        <div class="studio-imagery">
-          <div class="studio-photo-card card-primary">
-            <img src="Photo1.jpg" alt="Anastasia working at desk with iPad and glove" class="studio-img" loading="lazy" />
-            <div class="studio-photo-label">The Digital Studio</div>
-          </div>
-          <div class="studio-photo-card card-secondary">
-            <img src="Photo2.jpg" alt="Anastasia with sketchbook and drawing pens" class="studio-img" loading="lazy" />
-            <div class="studio-photo-label">Sketchbook &amp; Concept</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact / Licensing Section -->
-    <section class="contact-section" id="contact">
-      <div class="contact-box">
-        <div class="contact-decor-icon">✨</div>
-        <h2 class="contact-title">Work with Anastasia</h2>
-        <p class="contact-subtitle">
-          Interested in commercial licensing, book illustration, custom prints, or collaborations? 
-          Send a direct message on Instagram or an email inquiry.
-        </p>
-
-        <div class="contact-actions">
-          <a href="https://www.instagram.com/an.kh.arts" target="_blank" rel="noopener noreferrer" class="cta-button primary-cta">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-            Send DM on Instagram
-          </a>
-          <a href="mailto:anastasiakh.art@gmail.com" class="cta-button secondary-cta" id="emailCta">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            Email Inquiry
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="page-footer">
-      <div class="footer-inner">
-        <p class="footer-copy">&copy; <span id="currentYear"></span> Anastasia Kh. All rights reserved.</p>
-        <p class="footer-note">Handcrafted artist landing page • Powered by art &amp; inspiration</p>
-      </div>
-    </footer>
+    <section class="contact" id="contact"><p class="eyebrow">Good things start with a conversation</p><h2>Have something<br><em>in mind?</em></h2><a href="mailto:hello@anastasiakh.art">hello@anastasiakh.art <span aria-hidden="true">↗</span></a><p>For commissions, collaborations, or just to say hello.</p></section>
   </main>
-
-  <!-- Gallery Lightbox Modal -->
-  <div id="lightbox" class="lightbox-modal" aria-hidden="true" role="dialog" aria-label="Artwork full view">
-    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
-    <div class="lightbox-container">
-      <button class="lightbox-close-btn" id="lightboxClose" aria-label="Close lightbox">
-        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-      </button>
-
-      <button class="lightbox-nav-btn prev-btn" id="lightboxPrev" aria-label="Previous artwork">
-        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-      </button>
-
-      <div class="lightbox-content">
-        <div class="lightbox-image-wrapper">
-          <img id="lightboxImg" src="" alt="" class="lightbox-img" draggable="false" oncontextmenu="return false;" />
-        </div>
-        <div class="lightbox-details">
-          <div class="lightbox-meta">
-            <h3 id="lightboxTitle" class="lightbox-title"></h3>
-            <p id="lightboxDesc" class="lightbox-desc"></p>
-          </div>
-          <span id="lightboxCounter" class="lightbox-counter"></span>
-        </div>
-      </div>
-
-      <button class="lightbox-nav-btn next-btn" id="lightboxNext" aria-label="Next artwork">
-        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-      </button>
+  <footer>
+    <div class="footer-main">
+      <div class="footer-brand"><a href="#gallery" aria-label="an·kh home"><img src="assets/logo_light.png" width="160" height="59" alt="an·kh"></a><p>Art inspired by everyday rituals.<br>Paintings & illustrations by Anastasia&nbsp;Kh</p></div>
+      <nav class="footer-shop" id="shop" aria-labelledby="shop-title" tabindex="-1">
+        <h2 id="shop-title">Shop my art</h2>
+        <a class="shop-link" href="https://anastasiakhartist.gumroad.com/" target="_blank" rel="noopener noreferrer"><span><strong>Printable art</strong><small>Digital downloads · on Gumroad</small></span><span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+        <a class="shop-link" href="https://www.artmajeur.com/anastasia-kh" target="_blank" rel="noopener noreferrer"><span><strong>Fine art prints</strong><small>Printed to order · on ArtMajeur</small></span><span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+      </nav>
+      <div class="footer-follow"><h2>Follow my work</h2><nav class="social-links" aria-label="Social media">
+<a href="https://www.instagram.com/an.kh.art/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+<a href="https://www.youtube.com/@anastasiakhart" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.5 6.4a2.8 2.8 0 0 0-2-2C17.7 4 12 4 12 4s-5.7 0-7.5.4a2.8 2.8 0 0 0-2 2A30 30 0 0 0 2 12a30 30 0 0 0 .5 5.6 2.8 2.8 0 0 0 2 2C6.3 20 12 20 12 20s5.7 0 7.5-.4a2.8 2.8 0 0 0 2-2A30 30 0 0 0 22 12a30 30 0 0 0-.5-5.6Z"/><path fill="var(--social-fill)" d="m10 8 6 4-6 4Z"/></svg></a>
+<a href="https://cara.app/anastasiakh" target="_blank" rel="noopener noreferrer" aria-label="Cara" title="Cara"><svg aria-hidden="true" width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M159.095 65.5695L188.299 25.8197C141.919 -11.4129 71.0789 -9.07994 30.2977 37.3947C16.782 52.7973 8.09251 72.8914 7.08942 97.2662C5.69382 131.179 20.7504 162.585 44.2222 179.443C88.6201 211.33 148.393 203.635 191 173.408L164.897 131.311C133.567 155.964 76.0419 153.615 72.0666 104.31C68.0913 55.004 121.963 40.9164 159.095 65.5695Z" fill="currentColor"/>
+</svg></a>
+</nav></div>
     </div>
-  </div>
-
-  <!-- Artwork Protection Toast Notification -->
-  <div id="protectionToast" class="protection-toast" aria-live="polite">Artwork is protected &bull; &copy; Anastasia Kh.</div>
-
-  <script src="app.js"></script>
+    <div class="footer-bottom"><span>© <span id="year">2026</span> an·kh ARTS. All rights reserved.</span><a href="#gallery">Back to top ↑</a></div>
+  </footer>
 </body>
 </html>
